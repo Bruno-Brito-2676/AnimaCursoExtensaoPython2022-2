@@ -15,7 +15,10 @@ print(nome)
 #Exibir a idade (Que está dentro da variável idade)
 print(idade)
 
-
+# Quando quiser exibir a frase "Minha idade é" completando com o conteúdo da variváel idade
+print("Minha idade é "+str(idade))
+print(f"Minha idade é {idade}")
+print("Minha idade é {}".format(idade))
 
 
 '''
