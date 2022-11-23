@@ -12,8 +12,8 @@ cursor = conexao.cursor()
 sql = "INSERT INTO pessoas (pessoa_id, nome, nome_civil, tipo) VALUES (12,'The Flash', 'Barry Allen', 'Herói(na)')"
 
 # 5o. passo: Executar o comando SQL
-print(cursor.execute(sql))
+cursor.execute(sql)
 
 # 6o. passo: Confirmar o INSERT com commit() e fehcar o banco
-cursor.commit()
+conexao.commit()
 conexao.close()
